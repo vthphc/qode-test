@@ -13,9 +13,13 @@ export default function Photo() {
     const [photos, setPhotos] = React.useState<Photo[]>([]);
 
     React.useEffect(() => {
-        fetch("/api/photos")
-            .then((response) => response.json())
-            .then((data) => setPhotos(data));
+        try {
+            fetch("/api/photos")
+                .then((response) => response.json())
+                .then((data) => setPhotos(data));
+        } catch (error) {
+            console.error(error);
+        }
     }, []);
 
     const navigateToUploadPhoto = () => {

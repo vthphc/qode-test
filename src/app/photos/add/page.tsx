@@ -1,4 +1,4 @@
-import UploadImage from '@/pages/UploadPhoto/page'
+import UploadImage from '@/ui/UploadPhoto/page'
 import React from 'react'
 
 export default function UploadImagePage() {
