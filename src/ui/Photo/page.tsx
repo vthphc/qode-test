@@ -1,7 +1,7 @@
 "use client";
 
-import PhotoCard from "@/Components/PhotoCard/page";
 import React from "react";
+import PhotoCard from "./PhotoCard/page";
 
 interface Photo {
     id: number;
